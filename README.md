@@ -13,6 +13,14 @@ Following changes were made:
 2. Don't use sigmoid activation function, but use the activation function in linear regression i.e. h(Theta) = Theta' * X;
 3. Remove the derivative term for the sigmoid cost function in the back-propagation part.
 
+Another possibility is the use of tanh function as the activation function. A tanh function produces values in the range -1 through +1.
+
+If tanh is used as an activation function, following changes should be made: 
+
+1. Replace sigmoid function to tanh function.
+2. Replace the derivative term for sigmoid function in back-propagation part by derivative term for tanh activation. This derivative is (1 - f(z) .^ 2).
+3. Normalize the input data (X) and the output valus (y) so that they fall in the range -1 to +1.
+
 Sample output is:
 
 ```cmd
